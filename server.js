@@ -25,6 +25,12 @@ createConnection(typeormConfig).then( (connection) => {
   
 
   // aquí van tus rutas
+  app.get('/api/test', async (req, res) => {
+    
+    // console.log(posts);
+    res.send({ data: 'hola mundo prod' });
+  });
+
   app.get('/api/hello', async (req, res) => {
     const postRepository = connection.getRepository(Post);
     const posts = await postRepository.find();
