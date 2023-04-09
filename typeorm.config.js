@@ -1,10 +1,10 @@
 module.exports = {
   type: 'mysql',
-  host: 'localhost',
-  port: 3306,
-  username: 'camilo',
-  password: '123456',
-  database: 'biotemp',
+  host: 'containers-us-west-63.railway.app',
+  port: 7862,
+  username: 'root',
+  password: 'MGPQ9ujsokjB29orX5bg',
+  database: 'railway',
   entities: [
     'src_back/entities/**/*.js'
   ],
